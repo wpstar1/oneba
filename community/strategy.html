@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게임 전략 - 카지노 월드</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/board.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-dice"></i>
+                    <h1><a href="../index.html">CASINO WORLD</a></h1>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li><a href="../index.html"><i class="fas fa-home"></i> 홈</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="active"><i class="fas fa-comments"></i> 커뮤니티 <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="free-board.html">자유게시판</a></li>
+                                <li><a href="experience.html">카지노 후기</a></li>
+                                <li><a href="strategy.html">게임 전략</a></li>
+                                <li><a href="qna.html">질문 & 답변</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="board-wrapper">
+        <div class="container">
+            <div class="board-header">
+                <div>
+                    <h1 class="board-title"><i class="fas fa-chess"></i> 게임 전략</h1>
+                    <p class="board-subtitle">카지노 게임 전략과 팁을 공유하세요</p>
+                </div>
+                <button class="btn btn-primary write-btn" onclick="window.location.href='write.html'">
+                    <i class="fas fa-pencil-alt"></i> 글쓰기
+                </button>
+            </div>
+
+            <div class="board-navigation">
+                <div class="board-tabs">
+                    <button class="tab-btn active">전체</button>
+                    <button class="tab-btn">인기글</button>
+                    <button class="tab-btn">공지</button>
+                </div>
+                <div class="board-search">
+                    <select class="search-select">
+                        <option>전체</option>
+                        <option>제목</option>
+                        <option>내용</option>
+                        <option>작성자</option>
+                    </select>
+                    <input type="text" class="search-input" placeholder="검색어를 입력하세요">
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="board-stats">
+                <div class="stat-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>전체 글 <strong>642</strong></span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-eye"></i>
+                    <span>오늘 조회 <strong>4,289</strong></span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span>온라인 <strong>92</strong></span>
+                </div>
+            </div>
+
+            <!-- 공지사항 -->
+            <div class="notice-section">
+                <div class="post-item notice">
+                    <div class="post-badge notice-badge">공지</div>
+                    <div class="post-number">-</div>
+                    <div class="post-title">
+                        <a href="#"><i class="fas fa-bullhorn"></i> 게임 전략 게시판 운영 가이드</a>
+                    </div>
+                    <div class="post-author">관리자</div>
+                    <div class="post-date">2024.01.15</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 9,567</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 134</div>
+                </div>
+                <div class="post-item notice">
+                    <div class="post-badge notice-badge">공지</div>
+                    <div class="post-number">-</div>
+                    <div class="post-title">
+                        <a href="#"><i class="fas fa-trophy"></i> 이달의 베스트 전략 투표 진행 중</a>
+                    </div>
+                    <div class="post-author">관리자</div>
+                    <div class="post-date">2024.01.10</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 7,234</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 178</div>
+                </div>
+            </div>
+
+            <!-- 게시글 목록 -->
+            <div class="board-list">
+                <div class="list-header">
+                    <div class="post-number">번호</div>
+                    <div class="post-title">제목</div>
+                    <div class="post-author">작성자</div>
+                    <div class="post-date">날짜</div>
+                    <div class="post-views">조회</div>
+                    <div class="post-likes">추천</div>
+                </div>
+
+                <div class="post-item hot searchable-item">
+                    <div class="post-badge hot-badge">HOT</div>
+                    <div class="post-number">642</div>
+                    <div class="post-title">
+                        <a href="#">
+                            바카라 베팅 전략 정리 (초보자용)
+                            <span class="comment-count">[52]</span>
+                            <span class="new-badge">N</span>
+                        </a>
+                    </div>
+                    <div class="post-author">전략왕</div>
+                    <div class="post-date">2024.01.20</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 5,432</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 234</div>
+                </div>
+
+                <div class="post-item hot searchable-item">
+                    <div class="post-badge hot-badge">HOT</div>
+                    <div class="post-number">641</div>
+                    <div class="post-title">
+                        <a href="#">
+                            블랙잭 베이직 스트래티지 완벽 가이드
+                            <span class="comment-count">[67]</span>
+                            <span class="new-badge">N</span>
+                        </a>
+                    </div>
+                    <div class="post-author">블랙잭마스터</div>
+                    <div class="post-date">2024.01.20</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 6,789</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 298</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">640</div>
+                    <div class="post-title">
+                        <a href="#">
+                            룰렛 마틴게일 시스템 실전 후기
+                            <span class="comment-count">[34]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">룰렛고수</div>
+                    <div class="post-date">2024.01.19</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 3,456</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 112</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">639</div>
+                    <div class="post-title">
+                        <a href="#">
+                            텍사스 홀덤 포지션별 전략
+                            <span class="comment-count">[28]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">포커프로</div>
+                    <div class="post-date">2024.01.19</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 2,987</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 95</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">638</div>
+                    <div class="post-title">
+                        <a href="#">
+                            슬롯머신 잭팟 터트리는 법 (경험담)
+                            <span class="comment-count">[41]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">슬롯왕</div>
+                    <div class="post-date">2024.01.18</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 4,123</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 167</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">637</div>
+                    <div class="post-title">
+                        <a href="#">
+                            바카라 패턴 분석이 가능할까?
+                            <span class="comment-count">[56]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">패턴연구가</div>
+                    <div class="post-date">2024.01.18</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 3,765</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 89</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">636</div>
+                    <div class="post-title">
+                        <a href="#">
+                            블랙잭 카드 카운팅 기초
+                            <span class="comment-count">[43]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">카운터</div>
+                    <div class="post-date">2024.01.17</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 5,234</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 201</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">635</div>
+                    <div class="post-title">
+                        <a href="#">
+                            포커 블러핑 타이밍
+                            <span class="comment-count">[22]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">포커페이스</div>
+                    <div class="post-date">2024.01.17</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 2,456</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 78</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">634</div>
+                    <div class="post-title">
+                        <a href="#">
+                            다이사이 확률과 배당
+                            <span class="comment-count">[18]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">확률계산</div>
+                    <div class="post-date">2024.01.16</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 1,876</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 54</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">633</div>
+                    <div class="post-title">
+                        <a href="#">
+                            카지노에서 돈 잃지 않는 법
+                            <span class="comment-count">[73]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">현명한플레이어</div>
+                    <div class="post-date">2024.01.16</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 7,234</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 312</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">632</div>
+                    <div class="post-title">
+                        <a href="#">
+                            크랩스 게임 기본 전략
+                            <span class="comment-count">[15]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">주사위선생</div>
+                    <div class="post-date">2024.01.15</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 1,543</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 42</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">631</div>
+                    <div class="post-title">
+                        <a href="#">
+                            슬롯머신 RTP 이해하기
+                            <span class="comment-count">[31]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">슬롯분석가</div>
+                    <div class="post-date">2024.01.15</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 2,678</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 87</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">630</div>
+                    <div class="post-title">
+                        <a href="#">
+                            바카라 뱅커 vs 플레이어 베팅 분석
+                            <span class="comment-count">[39]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">바카라교수</div>
+                    <div class="post-date">2024.01.14</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 3,234</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 124</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">629</div>
+                    <div class="post-title">
+                        <a href="#">
+                            포커 핸드 랭킹과 확률표
+                            <span class="comment-count">[26]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">수학고수</div>
+                    <div class="post-date">2024.01.14</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 2,345</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 71</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">628</div>
+                    <div class="post-title">
+                        <a href="#">
+                            룰렛 인사이드 vs 아웃사이드 베팅
+                            <span class="comment-count">[21]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">룰렛전문가</div>
+                    <div class="post-date">2024.01.13</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 1,987</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 63</div>
+                </div>
+            </div>
+
+            <!-- 페이지네이션 -->
+            <div class="pagination">
+                <button class="page-btn"><i class="fas fa-angle-double-left"></i></button>
+                <button class="page-btn"><i class="fas fa-angle-left"></i></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+                <button class="page-btn">6</button>
+                <button class="page-btn">7</button>
+                <button class="page-btn">8</button>
+                <button class="page-btn">9</button>
+                <button class="page-btn">10</button>
+                <button class="page-btn"><i class="fas fa-angle-right"></i></button>
+                <button class="page-btn"><i class="fas fa-angle-double-right"></i></button>
+            </div>
+
+            <div class="board-footer">
+                <button class="btn btn-secondary" onclick="window.location.href='../index.html'">
+                    <i class="fas fa-list"></i> 목록으로
+                </button>
+                <button class="btn btn-primary" onclick="window.location.href='write.html'">
+                    <i class="fas fa-pencil-alt"></i> 글쓰기
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CASINO WORLD</h3>
+                    <p>세계 카지노의 모든 정보를 한 곳에서</p>
+                </div>
+                <div class="footer-section">
+                    <h4>커뮤니티</h4>
+                    <ul>
+                        <li><a href="free-board.html">자유게시판</a></li>
+                        <li><a href="experience.html">카지노 후기</a></li>
+                        <li><a href="strategy.html">게임 전략</a></li>
+                        <li><a href="qna.html">Q&A</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Casino World. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

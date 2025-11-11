@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라이브 카지노 - 카지노 월드</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/board.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-dice"></i>
+                    <h1><a href="../index.html">CASINO WORLD</a></h1>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li><a href="../index.html"><i class="fas fa-home"></i> 홈</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="active"><i class="fas fa-gamepad"></i> 온라인 카지노 <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="online-baccarat.html">온라인 바카라 추천</a></li>
+                                <li><a href="online-casino.html">온라인 카지노 추천</a></li>
+                                <li><a href="live-casino.html">라이브 카지노</a></li>
+                                <li><a href="casino-bonus.html">카지노 보너스 정보</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#"><i class="fas fa-comments"></i> 커뮤니티 <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../community/free-board.html">자유게시판</a></li>
+                                <li><a href="../community/experience.html">카지노 후기</a></li>
+                                <li><a href="../community/strategy.html">게임 전략</a></li>
+                                <li><a href="../community/qna.html">질문 & 답변</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="board-wrapper">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html"><i class="fas fa-home"></i> 홈</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="#">온라인 카지노</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>라이브 카지노</span>
+            </div>
+
+            <div class="board-header">
+                <div>
+                    <h1 class="board-title"><i class="fas fa-video"></i> 라이브 카지노</h1>
+                    <p class="board-subtitle">실시간 딜러와 함께하는 라이브 카지노 정보 및 후기</p>
+                </div>
+                <button class="btn btn-primary write-btn" onclick="window.location.href='write.html'">
+                    <i class="fas fa-pencil-alt"></i> 글쓰기
+                </button>
+            </div>
+
+            <div class="board-navigation">
+                <div class="board-tabs">
+                    <button class="tab-btn active">전체</button>
+                    <button class="tab-btn">인기글</button>
+                    <button class="tab-btn">공지</button>
+                </div>
+                <div class="board-search">
+                    <select class="search-select">
+                        <option>전체</option>
+                        <option>제목</option>
+                        <option>내용</option>
+                        <option>작성자</option>
+                    </select>
+                    <input type="text" class="search-input" placeholder="검색어를 입력하세요">
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="board-stats">
+                <div class="stat-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>전체 글 <strong>987</strong></span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-calendar-day"></i>
+                    <span>오늘 글 <strong>32</strong></span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span>전체 회원 <strong>7,234</strong></span>
+                </div>
+            </div>
+
+            <!-- 게시글 목록 -->
+            <div class="board-list">
+                <div class="list-header">
+                    <div class="post-number">번호</div>
+                    <div class="post-title">제목</div>
+                    <div class="post-author">작성자</div>
+                    <div class="post-date">날짜</div>
+                    <div class="post-views">조회</div>
+                    <div class="post-likes">추천</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">987</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[후기]</span>
+                            에볼루션 라이브 바카라 딜러 추천합니다
+                            <span class="comment-count">[48]</span>
+                            <span class="new-badge">N</span>
+                        </a>
+                    </div>
+                    <div class="post-author">라이브팬</div>
+                    <div class="post-date">2025.11.11</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 2,678</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 189</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">986</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[정보]</span>
+                            라이브 카지노 화질 좋은 사이트 비교
+                            <span class="comment-count">[35]</span>
+                            <span class="new-badge">N</span>
+                        </a>
+                    </div>
+                    <div class="post-author">화질덕후</div>
+                    <div class="post-date">2025.11.11</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 2,234</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 165</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">985</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[추천]</span>
+                            프라그마틱 라이브 룰렛 추천 테이블
+                            <span class="comment-count">[29]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">룰렛러버</div>
+                    <div class="post-date">2025.11.10</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 1,987</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 152</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">984</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[질문]</span>
+                            라이브 카지노 처음인데 주의사항 있나요?
+                            <span class="comment-count">[41]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">초보라이브</div>
+                    <div class="post-date">2025.11.10</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 2,456</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 134</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">983</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[후기]</span>
+                            에볼루션 라이트닝 다이스 대박 후기
+                            <span class="comment-count">[52]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">다이스킹</div>
+                    <div class="post-date">2025.11.10</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 2,789</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 178</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">982</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[정보]</span>
+                            라이브 블랙잭 최소 베팅 낮은 곳 정리
+                            <span class="comment-count">[26]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">소액배팅</div>
+                    <div class="post-date">2025.11.10</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 2,123</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 147</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">981</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[추천]</span>
+                            마이크로게이밍 라이브딜러 게임 추천
+                            <span class="comment-count">[31]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">딜러매니아</div>
+                    <div class="post-date">2025.11.09</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 1,876</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 156</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">980</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[후기]</span>
+                            프라그마틱 메가 룰렛에서 500배 당첨!
+                            <span class="comment-count">[67]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">메가승자</div>
+                    <div class="post-date">2025.11.09</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 2,945</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 198</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">979</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[질문]</span>
+                            라이브 카지노 딜러와 채팅 가능한가요?
+                            <span class="comment-count">[23]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">소통파</div>
+                    <div class="post-date">2025.11.09</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 1,654</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 89</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">978</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[정보]</span>
+                            에볼루션 게임쇼 종류 완벽 정리
+                            <span class="comment-count">[38]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">게임쇼팬</div>
+                    <div class="post-date">2025.11.09</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 2,345</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 172</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">977</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[추천]</span>
+                            한국어 지원 라이브 카지노 베스트 3
+                            <span class="comment-count">[44]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">한국어중요</div>
+                    <div class="post-date">2025.11.09</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 2,567</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 183</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">976</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[후기]</span>
+                            라이브 식보 게임 한달 플레이 후기
+                            <span class="comment-count">[19]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">식보마스터</div>
+                    <div class="post-date">2025.11.08</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 1,432</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 126</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">975</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[정보]</span>
+                            라이브 카지노 vs 일반 카지노 게임 차이점
+                            <span class="comment-count">[27]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">비교분석</div>
+                    <div class="post-date">2025.11.08</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 1,987</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 145</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">974</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[질문]</span>
+                            모바일에서 라이브 카지노 원활하게 되나요?
+                            <span class="comment-count">[33]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">모바일유저</div>
+                    <div class="post-date">2025.11.08</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 2,123</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 138</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">973</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[추천]</span>
+                            에볼루션 크레이지 타임 꿀팁 공유
+                            <span class="comment-count">[56]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">크레이지팬</div>
+                    <div class="post-date">2025.11.08</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 2,678</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 176</div>
+                </div>
+            </div>
+
+            <!-- 페이지네이션 -->
+            <div class="pagination">
+                <button class="page-btn"><i class="fas fa-angle-double-left"></i></button>
+                <button class="page-btn"><i class="fas fa-angle-left"></i></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+                <button class="page-btn">6</button>
+                <button class="page-btn">7</button>
+                <button class="page-btn">8</button>
+                <button class="page-btn">9</button>
+                <button class="page-btn">10</button>
+                <button class="page-btn"><i class="fas fa-angle-right"></i></button>
+                <button class="page-btn"><i class="fas fa-angle-double-right"></i></button>
+            </div>
+
+            <div class="board-footer">
+                <button class="btn btn-secondary" onclick="window.location.href='../index.html'">
+                    <i class="fas fa-list"></i> 목록으로
+                </button>
+                <button class="btn btn-primary" onclick="window.location.href='write.html'">
+                    <i class="fas fa-pencil-alt"></i> 글쓰기
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CASINO WORLD</h3>
+                    <p>세계 카지노의 모든 정보를 한 곳에서</p>
+                </div>
+                <div class="footer-section">
+                    <h4>온라인 카지노</h4>
+                    <ul>
+                        <li><a href="online-baccarat.html">온라인 바카라 추천</a></li>
+                        <li><a href="online-casino.html">온라인 카지노 추천</a></li>
+                        <li><a href="live-casino.html">라이브 카지노</a></li>
+                        <li><a href="casino-bonus.html">카지노 보너스 정보</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>커뮤니티</h4>
+                    <ul>
+                        <li><a href="../community/free-board.html">자유게시판</a></li>
+                        <li><a href="../community/experience.html">카지노 후기</a></li>
+                        <li><a href="../community/strategy.html">게임 전략</a></li>
+                        <li><a href="../community/qna.html">Q&A</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Casino World. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

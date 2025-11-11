@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자유게시판 - 카지노 월드</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/board.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-dice"></i>
+                    <h1><a href="../index.html">CASINO WORLD</a></h1>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li><a href="../index.html"><i class="fas fa-home"></i> 홈</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="active"><i class="fas fa-comments"></i> 커뮤니티 <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="free-board.html">자유게시판</a></li>
+                                <li><a href="experience.html">카지노 후기</a></li>
+                                <li><a href="strategy.html">게임 전략</a></li>
+                                <li><a href="qna.html">질문 & 답변</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="board-wrapper">
+        <div class="container">
+            <div class="board-header">
+                <div>
+                    <h1 class="board-title"><i class="fas fa-comment-dots"></i> 자유게시판</h1>
+                    <p class="board-subtitle">카지노에 관한 자유로운 이야기를 나눠보세요</p>
+                </div>
+                <button class="btn btn-primary write-btn" onclick="window.location.href='write.html'">
+                    <i class="fas fa-pencil-alt"></i> 글쓰기
+                </button>
+            </div>
+
+            <div class="board-navigation">
+                <div class="board-tabs">
+                    <button class="tab-btn active">전체</button>
+                    <button class="tab-btn">인기글</button>
+                    <button class="tab-btn">공지</button>
+                </div>
+                <div class="board-search">
+                    <select class="search-select">
+                        <option>전체</option>
+                        <option>제목</option>
+                        <option>내용</option>
+                        <option>작성자</option>
+                    </select>
+                    <input type="text" class="search-input" placeholder="검색어를 입력하세요">
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="board-stats">
+                <div class="stat-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>전체 글 <strong>1,234</strong></span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-eye"></i>
+                    <span>오늘 조회 <strong>5,678</strong></span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span>온라인 <strong>89</strong></span>
+                </div>
+            </div>
+
+            <!-- 공지사항 -->
+            <div class="notice-section">
+                <div class="post-item notice">
+                    <div class="post-badge notice-badge">공지</div>
+                    <div class="post-number">-</div>
+                    <div class="post-title">
+                        <a href="#"><i class="fas fa-bullhorn"></i> 카지노 월드 커뮤니티 이용 규칙 안내</a>
+                    </div>
+                    <div class="post-author">관리자</div>
+                    <div class="post-date">2024.01.15</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 12,345</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 156</div>
+                </div>
+                <div class="post-item notice">
+                    <div class="post-badge notice-badge">공지</div>
+                    <div class="post-number">-</div>
+                    <div class="post-title">
+                        <a href="#"><i class="fas fa-gift"></i> 신규 회원 이벤트 - 포인트 지급 안내</a>
+                    </div>
+                    <div class="post-author">관리자</div>
+                    <div class="post-date">2024.01.10</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 8,942</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 234</div>
+                </div>
+            </div>
+
+            <!-- 게시글 목록 -->
+            <div class="board-list">
+                <div class="list-header">
+                    <div class="post-number">번호</div>
+                    <div class="post-title">제목</div>
+                    <div class="post-author">작성자</div>
+                    <div class="post-date">날짜</div>
+                    <div class="post-views">조회</div>
+                    <div class="post-likes">추천</div>
+                </div>
+
+                <div class="post-item hot searchable-item">
+                    <div class="post-badge hot-badge">HOT</div>
+                    <div class="post-number">1,234</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[정보]</span>
+                            솔레어 3박 4일 다녀왔습니다. 후기 공유드려요
+                            <span class="comment-count">[24]</span>
+                            <span class="new-badge">N</span>
+                        </a>
+                    </div>
+                    <div class="post-author">카지노러버</div>
+                    <div class="post-date">2024.01.20</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 2,456</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 89</div>
+                </div>
+
+                <div class="post-item hot searchable-item">
+                    <div class="post-badge hot-badge">HOT</div>
+                    <div class="post-number">1,233</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[질문]</span>
+                            바카라 초보인데 조언 좀 구합니다
+                            <span class="comment-count">[18]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">뉴비123</div>
+                    <div class="post-date">2024.01.20</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 1,892</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 45</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">1,232</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[후기]</span>
+                            마카오 베네시안 다녀온 후기
+                            <span class="comment-count">[15]</span>
+                            <span class="new-badge">N</span>
+                        </a>
+                    </div>
+                    <div class="post-author">여행가</div>
+                    <div class="post-date">2024.01.19</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 1,234</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 32</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">1,231</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[정보]</span>
+                            항공권 저렴하게 구매하는 팁 공유
+                            <span class="comment-count">[12]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">알뜰족</div>
+                    <div class="post-date">2024.01.19</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 987</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 28</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">1,230</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[잡담]</span>
+                            오늘 오카다에서 대박났어요!
+                            <span class="comment-count">[45]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">행운아</div>
+                    <div class="post-date">2024.01.18</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 3,456</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 124</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">1,229</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[질문]</span>
+                            롤링 프로그램 어떻게 활용하나요?
+                            <span class="comment-count">[8]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">초보자</div>
+                    <div class="post-date">2024.01.18</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 654</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 15</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">1,228</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[정보]</span>
+                            블랙잭 기본 전략표 정리했습니다
+                            <span class="comment-count">[6]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">전략가</div>
+                    <div class="post-date">2024.01.17</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 1,123</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 52</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">1,227</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[잡담]</span>
+                            라스베이거스 일주일 일정 조언 부탁드려요
+                            <span class="comment-count">[22]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">미국여행</div>
+                    <div class="post-date">2024.01.17</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 876</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 19</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">1,226</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[후기]</span>
+                            싱가포르 마리나 베이 샌즈 경험담
+                            <span class="comment-count">[11]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">싱가포르</div>
+                    <div class="post-date">2024.01.16</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 1,345</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 38</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">1,225</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[정보]</span>
+                            환전 시 주의사항 정리
+                            <span class="comment-count">[9]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">환전꿀팁</div>
+                    <div class="post-date">2024.01.16</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 782</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 24</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">1,224</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[질문]</span>
+                            카지노 드레스코드가 궁금합니다
+                            <span class="comment-count">[5]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">패션걱정</div>
+                    <div class="post-date">2024.01.15</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 543</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 12</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">1,223</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[잡담]</span>
+                            처음 카지노 가는데 떨리네요 ㅎㅎ
+                            <span class="comment-count">[17]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">설레임</div>
+                    <div class="post-date">2024.01.15</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 691</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 21</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">1,222</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[후기]</span>
+                            필리핀 시티 오브 드림즈 방문기
+                            <span class="comment-count">[7]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">필리핀통</div>
+                    <div class="post-date">2024.01.14</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 934</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 26</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">1,221</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[정보]</span>
+                            룰렛 베팅 시스템 종류 정리
+                            <span class="comment-count">[14]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">룰렛마스터</div>
+                    <div class="post-date">2024.01.14</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 1,087</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 41</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">1,220</div>
+                    <div class="post-title">
+                        <a href="#">
+                            <span class="category-tag">[질문]</span>
+                            마카오랑 솔레어 중 어디가 나을까요?
+                            <span class="comment-count">[23]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">고민중</div>
+                    <div class="post-date">2024.01.13</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 1,567</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 35</div>
+                </div>
+            </div>
+
+            <!-- 페이지네이션 -->
+            <div class="pagination">
+                <button class="page-btn"><i class="fas fa-angle-double-left"></i></button>
+                <button class="page-btn"><i class="fas fa-angle-left"></i></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+                <button class="page-btn">6</button>
+                <button class="page-btn">7</button>
+                <button class="page-btn">8</button>
+                <button class="page-btn">9</button>
+                <button class="page-btn">10</button>
+                <button class="page-btn"><i class="fas fa-angle-right"></i></button>
+                <button class="page-btn"><i class="fas fa-angle-double-right"></i></button>
+            </div>
+
+            <div class="board-footer">
+                <button class="btn btn-secondary" onclick="window.location.href='../index.html'">
+                    <i class="fas fa-list"></i> 목록으로
+                </button>
+                <button class="btn btn-primary" onclick="window.location.href='write.html'">
+                    <i class="fas fa-pencil-alt"></i> 글쓰기
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CASINO WORLD</h3>
+                    <p>세계 카지노의 모든 정보를 한 곳에서</p>
+                </div>
+                <div class="footer-section">
+                    <h4>커뮤니티</h4>
+                    <ul>
+                        <li><a href="free-board.html">자유게시판</a></li>
+                        <li><a href="experience.html">카지노 후기</a></li>
+                        <li><a href="strategy.html">게임 전략</a></li>
+                        <li><a href="qna.html">Q&A</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Casino World. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
