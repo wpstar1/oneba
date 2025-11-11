@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+Allow: /casinos/
+Allow: /games/
+Allow: /community/
+Allow: /history/
+Allow: /online-casino/
+Allow: /travel/
+
+# 크롤링 최적화
+Crawl-delay: 0
+
+# 이미지 크롤링 허용
+User-agent: Googlebot-Image
+Allow: /img/
+Allow: /images/
+
+# 사이트맵 위치
+Sitemap: https://oneba.vercel.app/sitemap.xml
+Sitemap: https://oneba.vercel.app/sitemap-pages.xml
+Sitemap: https://oneba.vercel.app/sitemap-images.xml
+
+# 모바일 최적화
+User-agent: Googlebot-Mobile
+Allow: /
+
+# 네이버 검색봇
+User-agent: Yeti
+Allow: /
+
+# 다음 검색봇
+User-agent: Daumoa
+Allow: /
