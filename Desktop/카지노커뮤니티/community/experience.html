@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카지노 후기 - 카지노 월드</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/board.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-dice"></i>
+                    <h1><a href="../index.html">CASINO WORLD</a></h1>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li><a href="../index.html"><i class="fas fa-home"></i> 홈</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="active"><i class="fas fa-comments"></i> 커뮤니티 <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="free-board.html">자유게시판</a></li>
+                                <li><a href="experience.html">카지노 후기</a></li>
+                                <li><a href="strategy.html">게임 전략</a></li>
+                                <li><a href="qna.html">질문 & 답변</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="board-wrapper">
+        <div class="container">
+            <div class="board-header">
+                <div>
+                    <h1 class="board-title"><i class="fas fa-star"></i> 카지노 후기</h1>
+                    <p class="board-subtitle">실제 카지노 방문 경험을 공유해주세요</p>
+                </div>
+                <button class="btn btn-primary write-btn" onclick="window.location.href='write.html'">
+                    <i class="fas fa-pencil-alt"></i> 글쓰기
+                </button>
+            </div>
+
+            <div class="board-navigation">
+                <div class="board-tabs">
+                    <button class="tab-btn active">전체</button>
+                    <button class="tab-btn">인기글</button>
+                    <button class="tab-btn">공지</button>
+                </div>
+                <div class="board-search">
+                    <select class="search-select">
+                        <option>전체</option>
+                        <option>제목</option>
+                        <option>내용</option>
+                        <option>작성자</option>
+                    </select>
+                    <input type="text" class="search-input" placeholder="검색어를 입력하세요">
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="board-stats">
+                <div class="stat-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>전체 글 <strong>856</strong></span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-eye"></i>
+                    <span>오늘 조회 <strong>3,421</strong></span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span>온라인 <strong>67</strong></span>
+                </div>
+            </div>
+
+            <!-- 공지사항 -->
+            <div class="notice-section">
+                <div class="post-item notice">
+                    <div class="post-badge notice-badge">공지</div>
+                    <div class="post-number">-</div>
+                    <div class="post-title">
+                        <a href="#"><i class="fas fa-bullhorn"></i> 카지노 후기 작성 시 유의사항 안내</a>
+                    </div>
+                    <div class="post-author">관리자</div>
+                    <div class="post-date">2024.01.15</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 8,234</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 102</div>
+                </div>
+                <div class="post-item notice">
+                    <div class="post-badge notice-badge">공지</div>
+                    <div class="post-number">-</div>
+                    <div class="post-title">
+                        <a href="#"><i class="fas fa-gift"></i> 베스트 후기 선정 이벤트 진행 중!</a>
+                    </div>
+                    <div class="post-author">관리자</div>
+                    <div class="post-date">2024.01.10</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 6,789</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 145</div>
+                </div>
+            </div>
+
+            <!-- 게시글 목록 -->
+            <div class="board-list">
+                <div class="list-header">
+                    <div class="post-number">번호</div>
+                    <div class="post-title">제목</div>
+                    <div class="post-author">작성자</div>
+                    <div class="post-date">날짜</div>
+                    <div class="post-views">조회</div>
+                    <div class="post-likes">추천</div>
+                </div>
+
+                <div class="post-item hot searchable-item">
+                    <div class="post-badge hot-badge">HOT</div>
+                    <div class="post-number">856</div>
+                    <div class="post-title">
+                        <a href="#">
+                            솔레어 3박4일 다녀왔습니다 (장문후기)
+                            <span class="comment-count">[38]</span>
+                            <span class="new-badge">N</span>
+                        </a>
+                    </div>
+                    <div class="post-author">솔레어러버</div>
+                    <div class="post-date">2024.01.20</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 4,567</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 156</div>
+                </div>
+
+                <div class="post-item hot searchable-item">
+                    <div class="post-badge hot-badge">HOT</div>
+                    <div class="post-number">855</div>
+                    <div class="post-title">
+                        <a href="#">
+                            마카오 베네시안 후기 - 대박났어요!!
+                            <span class="comment-count">[42]</span>
+                            <span class="new-badge">N</span>
+                        </a>
+                    </div>
+                    <div class="post-author">행운의여신</div>
+                    <div class="post-date">2024.01.20</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 3,892</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 189</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">854</div>
+                    <div class="post-title">
+                        <a href="#">
+                            오카다 마닐라 롤링 혜택 정보
+                            <span class="comment-count">[28]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">롤링마스터</div>
+                    <div class="post-date">2024.01.19</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 2,345</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 87</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">853</div>
+                    <div class="post-title">
+                        <a href="#">
+                            라스베이거스 벨라지오 VIP룸 경험담
+                            <span class="comment-count">[19]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">VIP고객</div>
+                    <div class="post-date">2024.01.19</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 3,124</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 124</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">852</div>
+                    <div class="post-title">
+                        <a href="#">
+                            시티 오브 드림즈 숙박 리뷰
+                            <span class="comment-count">[15]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">호텔평론가</div>
+                    <div class="post-date">2024.01.18</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 1,876</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 62</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">851</div>
+                    <div class="post-title">
+                        <a href="#">
+                            마카오 갤럭시 리조트 솔직후기
+                            <span class="comment-count">[22]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">갤럭시팬</div>
+                    <div class="post-date">2024.01.18</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 2,134</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 73</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">850</div>
+                    <div class="post-title">
+                        <a href="#">
+                            필리핀 카지노 vs 마카오 카지노 비교
+                            <span class="comment-count">[31]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">여행전문가</div>
+                    <div class="post-date">2024.01.17</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 2,987</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 95</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">849</div>
+                    <div class="post-title">
+                        <a href="#">
+                            첫 마닐라 여행 후기 (초보자용)
+                            <span class="comment-count">[17]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">카지노뉴비</div>
+                    <div class="post-date">2024.01.17</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 1,654</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 54</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">848</div>
+                    <div class="post-title">
+                        <a href="#">
+                            윈 마카오 프리미엄 스위트 후기
+                            <span class="comment-count">[12]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">럭셔리여행</div>
+                    <div class="post-date">2024.01.16</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 2,234</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 78</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">847</div>
+                    <div class="post-title">
+                        <a href="#">
+                            MGM 마카오 슬롯머신 후기
+                            <span class="comment-count">[9]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">슬롯러버</div>
+                    <div class="post-date">2024.01.16</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 1,432</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 41</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">846</div>
+                    <div class="post-title">
+                        <a href="#">
+                            리조트 월드 마닐라 식당 추천
+                            <span class="comment-count">[14]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">미식가</div>
+                    <div class="post-date">2024.01.15</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 1,567</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 48</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">845</div>
+                    <div class="post-title">
+                        <a href="#">
+                            파라다이스 시티 3일 숙박기
+                            <span class="comment-count">[21]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">국내파</div>
+                    <div class="post-date">2024.01.15</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 1,892</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 66</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">844</div>
+                    <div class="post-title">
+                        <a href="#">
+                            호주 크라운 카지노 방문기
+                            <span class="comment-count">[8]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">호주여행자</div>
+                    <div class="post-date">2024.01.14</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 1,234</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 33</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">843</div>
+                    <div class="post-title">
+                        <a href="#">
+                            몬테카를로 카지노 드레스코드 경험
+                            <span class="comment-count">[18]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">유럽여행</div>
+                    <div class="post-date">2024.01.14</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 2,456</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 82</div>
+                </div>
+
+                <div class="post-item searchable-item">
+                    <div class="post-number">842</div>
+                    <div class="post-title">
+                        <a href="#">
+                            싱가포르 마리나베이샌즈 주말 여행기
+                            <span class="comment-count">[26]</span>
+                        </a>
+                    </div>
+                    <div class="post-author">싱가폴통</div>
+                    <div class="post-date">2024.01.13</div>
+                    <div class="post-views"><i class="fas fa-eye"></i> 2,789</div>
+                    <div class="post-likes"><i class="fas fa-heart"></i> 91</div>
+                </div>
+            </div>
+
+            <!-- 페이지네이션 -->
+            <div class="pagination">
+                <button class="page-btn"><i class="fas fa-angle-double-left"></i></button>
+                <button class="page-btn"><i class="fas fa-angle-left"></i></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+                <button class="page-btn">6</button>
+                <button class="page-btn">7</button>
+                <button class="page-btn">8</button>
+                <button class="page-btn">9</button>
+                <button class="page-btn">10</button>
+                <button class="page-btn"><i class="fas fa-angle-right"></i></button>
+                <button class="page-btn"><i class="fas fa-angle-double-right"></i></button>
+            </div>
+
+            <div class="board-footer">
+                <button class="btn btn-secondary" onclick="window.location.href='../index.html'">
+                    <i class="fas fa-list"></i> 목록으로
+                </button>
+                <button class="btn btn-primary" onclick="window.location.href='write.html'">
+                    <i class="fas fa-pencil-alt"></i> 글쓰기
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CASINO WORLD</h3>
+                    <p>세계 카지노의 모든 정보를 한 곳에서</p>
+                </div>
+                <div class="footer-section">
+                    <h4>커뮤니티</h4>
+                    <ul>
+                        <li><a href="free-board.html">자유게시판</a></li>
+                        <li><a href="experience.html">카지노 후기</a></li>
+                        <li><a href="strategy.html">게임 전략</a></li>
+                        <li><a href="qna.html">Q&A</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Casino World. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
