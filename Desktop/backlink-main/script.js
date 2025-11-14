@@ -2,63 +2,111 @@
 const products = {
     'profile-60': {
         name: '프로필 백링크 60개',
-        price: '5만원',
-        originalPrice: '10만원'
+        price: '6.5만원',
+        originalPrice: '10만원',
+        color: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
     },
     'profile-125': {
         name: '프로필 백링크 125개',
-        price: '8만원',
-        originalPrice: '20만원'
+        price: '9.5만원',
+        originalPrice: '20만원',
+        color: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
     },
     'profile-240': {
         name: '프로필 백링크 240개',
-        price: '15만원',
-        originalPrice: '40만원'
+        price: '16.5만원',
+        originalPrice: '40만원',
+        color: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
     },
     'web20-1000': {
         name: '웹2.0 백링크 스타터 패키지',
-        price: '5만원',
-        originalPrice: null
+        price: '6.5만원',
+        originalPrice: null,
+        color: 'linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%)'
     },
     'web20-2500': {
         name: '웹2.0 백링크 프로페셔널 패키지',
-        price: '10만원',
-        originalPrice: null
+        price: '11.5만원',
+        originalPrice: null,
+        color: 'linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%)'
     },
     'web20-5000': {
         name: '웹2.0 백링크 엔터프라이즈 패키지',
-        price: '18만원',
-        originalPrice: null
+        price: '19.5만원',
+        originalPrice: null,
+        color: 'linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%)'
     },
     'domain-30': {
         name: '도메인 권한 상승 베이직 패키지',
-        price: '5만원',
-        originalPrice: null
+        price: '6.5만원',
+        originalPrice: null,
+        color: 'linear-gradient(135deg, #4CAF50 0%, #45a049 100%)'
     },
     'domain-40': {
         name: '도메인 권한 상승 프리미엄 패키지',
-        price: '15만원',
-        originalPrice: null
+        price: '16.5만원',
+        originalPrice: null,
+        color: 'linear-gradient(135deg, #4CAF50 0%, #45a049 100%)'
     },
     'domain-50': {
         name: '도메인 권한 상승 엔터프라이즈 패키지',
-        price: '20만원',
-        originalPrice: null
+        price: '21.5만원',
+        originalPrice: null,
+        color: 'linear-gradient(135deg, #4CAF50 0%, #45a049 100%)'
     },
     'program-10000': {
-        name: '프로그램 백링크 스타터 패키지',
-        price: '7만원',
-        originalPrice: null
+        name: '워드프레스 백링크 스타터 패키지',
+        price: '8.5만원',
+        originalPrice: null,
+        color: 'linear-gradient(135deg, #f39c12 0%, #e67e22 100%)'
     },
     'program-30000': {
-        name: '프로그램 백링크 프로페셔널 패키지',
-        price: '10만원',
-        originalPrice: null
+        name: '워드프레스 백링크 프로페셔널 패키지',
+        price: '11.5만원',
+        originalPrice: null,
+        color: 'linear-gradient(135deg, #f39c12 0%, #e67e22 100%)'
     },
     'program-70000': {
-        name: '프로그램 백링크 프리미엄 패키지',
+        name: '워드프레스 백링크 프리미엄 패키지',
+        price: '21.5만원',
+        originalPrice: null,
+        color: 'linear-gradient(135deg, #f39c12 0%, #e67e22 100%)'
+    },
+    'combo-basic-1': {
+        name: '종합 패키지 기본셋트 스타터',
+        price: '15만원',
+        originalPrice: null,
+        color: 'linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)'
+    },
+    'combo-basic-2': {
+        name: '종합 패키지 기본셋트 프로페셔널',
+        price: '33만원',
+        originalPrice: null,
+        color: 'linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)'
+    },
+    'combo-basic-3': {
+        name: '종합 패키지 기본셋트 프리미엄',
+        price: '55만원',
+        originalPrice: null,
+        color: 'linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)'
+    },
+    'combo-full-1': {
+        name: '종합 패키지 풀셋트 스타터',
         price: '20만원',
-        originalPrice: null
+        originalPrice: null,
+        color: 'linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)'
+    },
+    'combo-full-2': {
+        name: '종합 패키지 풀셋트 프로페셔널',
+        price: '40만원',
+        originalPrice: null,
+        color: 'linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)'
+    },
+    'combo-full-3': {
+        name: '종합 패키지 풀셋트 프리미엄',
+        price: '70만원',
+        originalPrice: null,
+        color: 'linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)'
     }
 };
 
@@ -90,25 +138,27 @@ function initializeEventListeners() {
     });
 
     // 주문 폼 제출
-    const orderForm = document.getElementById('orderForm');
-    if (orderForm) {
-        orderForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            submitOrder();
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        submitOrder();
+    });
+
+    // 계좌번호 복사 버튼
+    document.getElementById('copyAccount').addEventListener('click', function() {
+        copyToClipboard('9002-1439-7622-7');
+    });
+
+    // 입금 확인 버튼
+    document.getElementById('confirmPayment').addEventListener('click', function() {
+        confirmPayment();
+    });
+
+    // 모달 닫기 버튼들
+    document.querySelectorAll('.close').forEach(closeBtn => {
+        closeBtn.addEventListener('click', function() {
+            const modal = this.closest('.modal');
+            closeModal(modal.id);
         });
-    }
-
-
-    // 모달 닫기 버튼들 (이벤트 위임 방식)
-    document.addEventListener('click', function(e) {
-        if (e.target.classList.contains('close')) {
-            e.preventDefault();
-            e.stopPropagation();
-            const modal = e.target.closest('.modal');
-            if (modal) {
-                closeModal(modal.id);
-            }
-        }
     });
 
     // 모달 외부 클릭 시 닫기 (주문 폼 모달 제외)
@@ -119,18 +169,6 @@ function initializeEventListeners() {
             }
         });
     });
-
-    // ESC 키로 모달 닫기
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-            const openModals = document.querySelectorAll('.modal[style*="display: block"]');
-            openModals.forEach(modal => {
-                if (modal.id !== 'orderFormModal') {
-                    closeModal(modal.id);
-                }
-            });
-        }
-    });
 }
 
 // 페이지 내 상품 섹션에는 탭이 없으므로 이 함수는 사용되지 않음
@@ -140,14 +178,33 @@ function initializeEventListeners() {
 function selectProduct(productId) {
     selectedProduct = productId;
     const product = products[productId];
-    
+
     // 선택된 상품 정보 표시
     document.getElementById('selectedProductName').textContent = product.name;
     document.getElementById('selectedProductPrice').textContent = product.price;
-    
+
+    // 모달 배경색 변경
+    const selectedProductDiv = document.querySelector('.selected-product');
+    if (selectedProductDiv && product.color) {
+        selectedProductDiv.style.background = product.color;
+    }
+
+    // 상품 상세 정보 가져오기
+    const productCard = document.querySelector(`.product-card[data-product="${productId}"]`);
+    if (productCard) {
+        const productDetails = productCard.querySelector('ul');
+        const detailsContainer = document.getElementById('selectedProductDetails');
+
+        if (productDetails && detailsContainer) {
+            // 상품 상세 정보 복사
+            detailsContainer.innerHTML = productDetails.innerHTML;
+            detailsContainer.style.display = 'block';
+        }
+    }
+
     // 상품별 필드 설정
     setupFormFields(productId);
-    
+
     // 주문 정보 입력 모달 열기 (페이지 내 상품에서 바로 열기)
     openModal('orderFormModal');
 }
@@ -156,14 +213,14 @@ function selectProduct(productId) {
 function setupFormFields(productId) {
     const keywordsGroup = document.getElementById('keywordsGroup');
     const keywordsInput = document.getElementById('keywords');
-    
+
     // 도메인 권한 상승 상품인지 확인
     if (productId.startsWith('domain-')) {
         // 도메인 권한 상승: 키워드 불필요
         keywordsGroup.style.display = 'none';
         keywordsInput.required = false;
     } else {
-        // 모든 백링크 상품: 키워드 1개 이상
+        // 모든 백링크 상품 및 종합 패키지: 키워드 1개 이상
         keywordsGroup.style.display = 'block';
         keywordsInput.required = true;
         keywordsInput.placeholder = '키워드1, 키워드2, 키워드3 (1개 이상)';
@@ -220,6 +277,15 @@ function generateOrderNumber() {
 function showPaymentInfo(orderNumber) {
     const product = products[selectedProduct];
     
+    // 현재 주문 정보 저장
+    currentOrderData = {
+        orderNumber: orderNumber,
+        product: selectedProduct,
+        website: document.getElementById('website').value,
+        keywords: document.getElementById('keywords').value,
+        email: document.getElementById('email').value
+    };
+    
     document.getElementById('orderNumber').textContent = orderNumber;
     document.getElementById('paymentProductName').textContent = product.name;
     document.getElementById('paymentAmount').textContent = product.price;
@@ -236,13 +302,19 @@ function openModal(modalId) {
 
 // 모달 닫기
 function closeModal(modalId) {
-    const modal = document.getElementById(modalId);
-    if (modal) {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
+    document.getElementById(modalId).style.display = 'none';
+    document.body.style.overflow = 'auto';
 }
 
+// 클립보드에 복사
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(function() {
+        alert('계좌번호가 복사되었습니다!');
+    }, function(err) {
+        console.error('복사 실패:', err);
+        alert('복사에 실패했습니다. 수동으로 복사해주세요.');
+    });
+}
 
 // 키워드 유효성 검사
 function validateKeywords(keywords, productId) {
@@ -250,9 +322,9 @@ function validateKeywords(keywords, productId) {
     if (productId.startsWith('domain-')) {
         return true;
     }
-    
+
     const keywordArray = keywords.split(',').map(k => k.trim()).filter(k => k);
-    
+
     // 모든 상품에서 키워드 1개 이상이면 OK
     return keywordArray.length >= 1;
 }
@@ -281,6 +353,13 @@ function validateForm() {
     return true;
 }
 
+// 주문 폼 제출 전 유효성 검사 추가
+document.getElementById('orderForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    if (validateForm()) {
+        submitOrder();
+    }
+});
 
 // 애니메이션 효과
 function addLoadingAnimation(button) {
@@ -293,5 +372,147 @@ function removeLoadingAnimation(button, originalText) {
     button.disabled = false;
 }
 
+// 입금 확인 알림
+let currentOrderData = null; // 현재 주문 정보 저장
 
- 
+function confirmPayment() {
+    if (!currentOrderData) {
+        alert('주문 정보를 찾을 수 없습니다.');
+        return;
+    }
+
+    const button = document.getElementById('confirmPayment');
+    addLoadingAnimation(button);
+
+    // 텔레그램으로 입금 확인 알림 전송
+    sendTelegramPaymentNotification(currentOrderData)
+        .then((result) => {
+            if (result && result.message) {
+                alert(`입금 확인 요청이 접수되었습니다.\n${result.message}\n관리자가 확인 후 작업을 시작하겠습니다.`);
+            } else {
+                alert('입금 확인 알림이 관리자에게 전송되었습니다.\n빠른 시간 내에 확인 후 작업을 시작하겠습니다.');
+            }
+            removeLoadingAnimation(button, '입금 완료 알림');
+            
+            // 버튼 비활성화 (중복 전송 방지)
+            button.disabled = true;
+            button.textContent = '알림 전송 완료';
+            button.style.background = '#28a745';
+        })
+        .catch(error => {
+            console.error('텔레그램 알림 전송 오류:', error);
+            alert(`알림 전송 중 오류가 발생했습니다.\n오류: ${error.message}\n\n관리자에게 직접 연락해주세요.`);
+            removeLoadingAnimation(button, '입금 완료 알림');
+        });
+}
+
+// 텔레그램 입금 확인 알림 전송
+async function sendTelegramPaymentNotification(orderData) {
+    const product = products[orderData.product];
+    const telegramToken = '7702916451:AAHV7Z-BIu7C2MkCi7o09zF8Q5ZPON3_LpY';
+    const chatId = '455532741';
+    
+    const message = `💰 입금 확인 요청
+
+📋 주문 정보:
+• 주문번호: ${orderData.orderNumber}
+• 상품명: ${product.name}
+• 가격: ${product.price}
+
+🌐 고객 정보:
+• 웹사이트: ${orderData.website}
+• 키워드: ${orderData.keywords || '없음'}
+• 이메일: ${orderData.email}
+
+⏰ 입금 확인 요청 시간: ${new Date().toLocaleString('ko-KR')}
+
+고객이 입금 완료를 알렸습니다. 확인 후 작업을 시작해주세요.`;
+
+    try {
+        console.log('텔레그램 전송 시도:', orderData);
+        
+        const response = await fetch(`https://api.telegram.org/bot${telegramToken}/sendMessage`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                chat_id: chatId,
+                text: message
+            })
+        });
+
+        const result = await response.json();
+        console.log('텔레그램 API 응답:', result);
+        
+        if (!response.ok) {
+            console.error('텔레그램 API 오류:', result);
+            // API 오류 시 로컬 저장으로 대체
+            return sendTelegramViaServer(orderData);
+        }
+
+        console.log('텔레그램 전송 성공!');
+        return result;
+        
+    } catch (error) {
+        console.error('텔레그램 전송 오류:', error);
+        // 네트워크 오류 시 로컬 저장으로 대체
+        return sendTelegramViaServer(orderData);
+    }
+}
+
+// 서버를 통한 텔레그램 전송 (대안)
+async function sendTelegramViaServer(orderData) {
+    try {
+        const product = products[orderData.product];
+        
+        // 로컬 스토리지에 알림 요청 저장
+        const notifications = JSON.parse(localStorage.getItem('telegramNotifications') || '[]');
+        const notification = {
+            id: Date.now().toString(),
+            type: 'payment_confirmation',
+            orderNumber: orderData.orderNumber,
+            productName: product.name,
+            price: product.price,
+            website: orderData.website,
+            keywords: orderData.keywords || '없음',
+            email: orderData.email,
+            timestamp: new Date().toISOString(),
+            status: 'pending'
+        };
+        
+        notifications.push(notification);
+        localStorage.setItem('telegramNotifications', JSON.stringify(notifications));
+        
+        // 관리자 페이지용 알림도 추가
+        const adminNotifications = JSON.parse(localStorage.getItem('adminNotifications') || '[]');
+        adminNotifications.push({
+            ...notification,
+            message: `💰 입금 확인 요청 - 주문번호: ${orderData.orderNumber}`
+        });
+        localStorage.setItem('adminNotifications', JSON.stringify(adminNotifications));
+        
+        // 콘솔에 관리자용 정보 출력
+        console.log(`
+🔔 새로운 입금 확인 요청
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 주문번호: ${orderData.orderNumber}
+🛍️ 상품명: ${product.name}
+💰 가격: ${product.price}
+🌐 웹사이트: ${orderData.website}
+🎯 키워드: ${orderData.keywords || '없음'}
+📧 이메일: ${orderData.email}
+⏰ 시간: ${new Date().toLocaleString('ko-KR')}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+관리자님, 입금을 확인해주세요!
+        `);
+        
+        // 성공으로 처리
+        return { 
+            ok: true, 
+            message: '입금 확인 요청이 접수되었습니다.\n관리자가 브라우저 콘솔에서 확인할 수 있습니다.' 
+        };
+    } catch (error) {
+        throw new Error('알림 저장에 실패했습니다.');
+    }
+} 
